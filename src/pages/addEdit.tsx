@@ -15,6 +15,8 @@ const AddEdit = (props: Props) => {
 		contact: string
 	}>(initialState)
 
+	const { name, email, contact } = formValue
+
 	return <div>AddContact</div>
 }
 
