@@ -11,7 +11,8 @@ import {
 	Th,
 	Thead,
 	Tr,
-	VStack
+	VStack,
+	Spacer
 } from '@chakra-ui/react'
 import Link from 'next/link'
 
@@ -32,6 +33,7 @@ export default function Home() {
 								<Th>Name</Th>
 								<Th>Email</Th>
 								<Th>Contact</Th>
+								<Th>Actions</Th>
 							</Tr>
 						</Thead>
 						<Tbody>
@@ -40,6 +42,13 @@ export default function Home() {
 									<Td>{item.name}</Td>
 									<Td>{item?.email}</Td>
 									<Td>{item?.contact}</Td>
+									<Td>
+										<Flex gap='0.5rem'>
+											<Button bg={'blue.100'}>Edit</Button>
+											<Spacer />
+											<Button bg={'red.200'}>Delete</Button>
+										</Flex>
+									</Td>
 								</Tr>
 							))}
 						</Tbody>
