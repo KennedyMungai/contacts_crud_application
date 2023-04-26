@@ -1,3 +1,4 @@
+import { useContactsQuery } from '@/services/contactsApi'
 import {
 	Flex,
 	Heading,
@@ -13,6 +14,8 @@ import {
 } from '@chakra-ui/react'
 
 export default function Home() {
+	const { data, isLoading, error } = useContactsQuery()
+
 	return (
 		<Flex justify={'center'} p={'4rem'}>
 			<VStack spacing={'4rem'}>
