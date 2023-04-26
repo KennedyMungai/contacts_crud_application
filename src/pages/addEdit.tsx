@@ -6,9 +6,7 @@ const initialState = {
 	contact: ''
 }
 
-type Props = {}
-
-const AddEdit = (props: Props) => {
+const AddEdit = () => {
 	const [formValue, setFormValue] = useState<{
 		name: string
 		email: string
