@@ -2,8 +2,8 @@ import React from 'react'
 
 type Props = {}
 
-const AddContact = (props: Props) => {
+const AddEdit = (props: Props) => {
 	return <div>AddContact</div>
 }
 
-export default AddContact
+export default AddEdit
