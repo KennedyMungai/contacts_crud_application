@@ -9,6 +9,12 @@ const initialState = {
 type Props = {}
 
 const AddEdit = (props: Props) => {
+	const [formValue, setFormValue] = useState<{
+		name: string
+		email: string
+		contact: string
+	}>()
+
 	return <div>AddContact</div>
 }
 
