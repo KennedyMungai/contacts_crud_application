@@ -12,12 +12,35 @@ import {
 	Thead,
 	Tr,
 	VStack,
-	Spacer
+	Spacer,
+	Box,
+	Skeleton,
+	Stack
 } from '@chakra-ui/react'
 import Link from 'next/link'
 
 export default function Home() {
 	const { data, isLoading, error } = useContactsQuery()
+
+	if (isLoading) {
+		return (
+			<Stack padding={4} spacing={1}>
+				<Skeleton height='40px' isLoaded={isLoading}></Skeleton>
+				<Skeleton
+					height='40px'
+					isLoaded={isLoading}
+					color='white'
+					fadeDuration={1}
+				></Skeleton>
+				<Skeleton
+					height='40px'
+					isLoaded={isLoading}
+					fadeDuration={4}
+					color='white'
+				></Skeleton>
+			</Stack>
+		)
+	}
 
 	return (
 		<Flex justify={'center'} p={'4rem'}>
