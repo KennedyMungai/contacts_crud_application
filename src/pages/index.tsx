@@ -55,9 +55,7 @@ export default function Home() {
 											</Button>
 											<Spacer />
 											<Button size={'sm'}>
-												<Link
-													href={`item/${item.name}`}
-												>
+												<Link href={`${item.name}`}>
 													View
 												</Link>
 											</Button>
