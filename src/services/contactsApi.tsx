@@ -13,6 +13,13 @@ export const contactsApi = createApi({
 	endpoints: (builder) => ({
 		contacts: builder.query<IContact[], void>({
 			query: () => '/contacts'
+		}),
+		addContact: builder.mutation<{}, IContact>({
+			query: (contact) => ({
+				url: '/contacts',
+				method: 'POST',
+				body: contact
+			})
 		})
 	})
 })
