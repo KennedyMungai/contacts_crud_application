@@ -29,17 +29,19 @@ export default function Home() {
 					<Table size='md'>
 						<Thead>
 							<Tr>
-								<Th>To convert</Th>
-								<Th>into</Th>
-								<Th isNumeric>multiply by</Th>
+								<Th>Name</Th>
+								<Th>Email</Th>
+								<Th>Contact</Th>
 							</Tr>
 						</Thead>
 						<Tbody>
-							<Tr>
-								<Td>inches</Td>
-								<Td>millimetres (mm)</Td>
-								<Td isNumeric>25.4</Td>
-							</Tr>
+							{data?.map((item: any, index: any) => (
+								<Tr key={item.id}>
+									<Td>{item.name}</Td>
+									<Td>{item?.email}</Td>
+									<Td>{item?.contact}</Td>
+								</Tr>
+							))}
 						</Tbody>
 					</Table>
 				</TableContainer>
