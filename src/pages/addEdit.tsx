@@ -1,5 +1,11 @@
 import { useEffect, useState } from 'react'
 
+const initialState = {
+	name: '',
+	email: '',
+	contact: ''
+}
+
 type Props = {}
 
 const AddEdit = (props: Props) => {
