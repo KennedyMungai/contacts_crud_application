@@ -1,3 +1,5 @@
-export const store = () => {
-	console.log('store')
-}
+import { configureStore } from "@reduxjs/toolkit";
+
+const store = configureStore({
+    
+})
