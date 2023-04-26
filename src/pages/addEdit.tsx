@@ -13,7 +13,7 @@ const AddEdit = (props: Props) => {
 		name: string
 		email: string
 		contact: string
-	}>()
+	}>(initialState)
 
 	return <div>AddContact</div>
 }
