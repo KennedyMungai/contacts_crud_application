@@ -44,9 +44,16 @@ export default function Home() {
 									<Td>{item?.contact}</Td>
 									<Td>
 										<Flex gap='0.5rem'>
-											<Button bg={'blue.100'}>Edit</Button>
+											<Button bg={'blue.100'}>
+												<Link href={`addEdit`}>
+													Edit
+												</Link>
+											</Button>
+
 											<Spacer />
-											<Button bg={'red.200'}>Delete</Button>
+											<Button bg={'red.200'}>
+												Delete
+											</Button>
 										</Flex>
 									</Td>
 								</Tr>
